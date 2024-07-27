@@ -1,6 +1,6 @@
 {
-  "name": "com.tdw.better.{package_name}",
-  "displayName": "{display_name}",
+  "name": "com.tdw.better.widgets",
+  "displayName": "Better Widgets",
   "version": "0.0.1",
   "unity": "2021.3",
   "description": " ",
@@ -11,14 +11,14 @@
     "name": "Better Plugins",
     "url": "https://github.com/techno-dwarf-works"
   },
-  "changelogUrl": "https://github.com/techno-dwarf-works/{project_name}",
-  "documentationUrl": "https://github.com/techno-dwarf-works/{project_name}/tree/main#readme",
+  "changelogUrl": "https://github.com/techno-dwarf-works/better-widgets",
+  "documentationUrl": "https://github.com/techno-dwarf-works/better-widgets/tree/main#readme",
   "license": "MIT",
-  "licensesUrl":"https://github.com/techno-dwarf-works/{project_name}/blob/main/LICENSE",
+  "licensesUrl":"https://github.com/techno-dwarf-works/better-widgets/blob/main/LICENSE",
   "keywords": [
-    "keyword1",
-    "keyword2",
-    "keyword2"
+    "widget",
+    "view",
+    "ui"
   ],
   "samples": [
     {
