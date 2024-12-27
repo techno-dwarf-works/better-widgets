@@ -20,9 +20,6 @@ namespace Better.Widgets.Runtime
         {
             switch (model)
             {
-                case MaterialWidgetModel materialModel:
-                    SetMaterial(materialModel.Value);
-                    break;
                 case ColorWidgetModel colorModel:
                     SetColorModel(colorModel);
                     break;
@@ -39,7 +36,7 @@ namespace Better.Widgets.Runtime
 #if BETTER_TWEENS
             if (IsVisible)
             {
-                PrepareTween(_colorGraphicTween).SetOptions(colorModel.Value).Play();
+                TweenColor(colorModel.Value);
                 return;
             }
 #endif
@@ -52,9 +49,14 @@ namespace Better.Widgets.Runtime
             Graphic.color = value;
         }
 
-        public void SetMaterial(Material value)
+#if BETTER_TWEENS
+        public ColorGraphicTween TweenColor(Color value)
         {
-            Graphic.material = value;
+            var tween = PrepareTween(_colorGraphicTween);
+            tween.SetOptions(value);
+
+            return tween;
         }
+#endif
     }
 }

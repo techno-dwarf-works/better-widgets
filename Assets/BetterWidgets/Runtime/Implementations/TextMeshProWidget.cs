@@ -3,7 +3,7 @@ using TMPro;
 
 namespace Better.Widgets.Runtime
 {
-    public class TextMeshProWidget : GraphicWidget<TMP_Text>
+    public abstract class TextMeshProWidget : GraphicWidget<TMP_Text>
     {
         public override bool SetModel(WidgetModel model)
         {
